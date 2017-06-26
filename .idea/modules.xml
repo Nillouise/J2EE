@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/J2EE.iml" filepath="$PROJECT_DIR$/J2EE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring direct project/spring direct project.iml" filepath="$PROJECT_DIR$/spring direct project/spring direct project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring2/spring2.iml" filepath="$PROJECT_DIR$/spring2/spring2.iml" />
     </modules>
   </component>
 </project>
