@@ -4,6 +4,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.how2java.pojo.Category;
+import com.how2java.service.ProductService;
+import com.how2java.pojo.Product;
 
 public class TestSpring {
 
@@ -11,8 +13,7 @@ public class TestSpring {
         ApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[] { "renameContext.xml" });
 
-        Category c = (Category) context.getBean("c");
-
-        System.out.println(c.getName());
+        ProductService s = (ProductService) context.getBean("s");
+        s.doSomeService();
     }
 }
