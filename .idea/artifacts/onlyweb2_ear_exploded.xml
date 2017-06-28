@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="onlyweb2:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/onlyweb2_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="onlyweb2/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
