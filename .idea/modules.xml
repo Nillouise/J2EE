@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/how2j/how2j.iml" filepath="$PROJECT_DIR$/how2j/how2j.iml" />
       <module fileurl="file://$PROJECT_DIR$/how2j-spring/how2j-spring.iml" filepath="$PROJECT_DIR$/how2j-spring/how2j-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven/maven.iml" filepath="$PROJECT_DIR$/maven/maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis2/mybatis2.iml" filepath="$PROJECT_DIR$/mybatis2/mybatis2.iml" />
       <module fileurl="file://$PROJECT_DIR$/onlyjava/onlyjava.iml" filepath="$PROJECT_DIR$/onlyjava/onlyjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/onlyweb/onlyweb.iml" filepath="$PROJECT_DIR$/onlyweb/onlyweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/onlyweb2/onlyweb2.iml" filepath="$PROJECT_DIR$/onlyweb2/onlyweb2.iml" />
