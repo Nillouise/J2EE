@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/J2EE.iml" filepath="$PROJECT_DIR$/J2EE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServeletBigProject/ServeletBigProject.iml" filepath="$PROJECT_DIR$/ServeletBigProject/ServeletBigProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/annotation/annotation.iml" filepath="$PROJECT_DIR$/annotation/annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/checkiml/checkiml.iml" filepath="$PROJECT_DIR$/checkiml/checkiml.iml" />
       <module fileurl="file://$PROJECT_DIR$/how2j/how2j.iml" filepath="$PROJECT_DIR$/how2j/how2j.iml" />
