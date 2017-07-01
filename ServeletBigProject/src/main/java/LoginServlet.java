@@ -13,10 +13,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(name="LoginServlet",urlPatterns="/login")
-public class LoginServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet
+{
 
     static Logger logger = Logger.getLogger(LoginServlet.class.toString());
-    public LoginServlet(){
+    public LoginServlet()
+    {
         BasicConfigurator.configure();
         logger.setLevel(Level.ALL);
         //handnote
@@ -26,7 +28,8 @@ public class LoginServlet extends HttpServlet {
 
     //handnote
     //servlet的生命周期：这个会在构造对象后调用，大概是被服务器（或者他们的包？）调用
-    public void init(ServletConfig config) {
+    public void init(ServletConfig config)
+    {
         System.out.println("init(ServletConfig)");
     }
 
@@ -59,9 +62,17 @@ public class LoginServlet extends HttpServlet {
         else
             html = "<div style='color:red'>fail</div>";
         //handnote
-        //设置中文UTF-8 在response
+        //设置中文UTF-8编码， 在response里，也可以用response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html; charset=UTF-8");
+        //在http的协议头里设成这个，就会让浏览器以为这不是html文件，会启动下载。
+        //response.setContentType("fdf/lol");
+        //下面这个是在http协议的信息头里告诉对方不要使用缓存页面。
+        response.setDateHeader("Expires", 0);
+        response.setHeader("Cache-Controll", "no-cache");
+        response.setHeader("pragma", "no-cache");
+
         PrintWriter pw = response.getWriter();
         pw.println(html);
+
     }
 }
