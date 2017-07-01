@@ -15,7 +15,8 @@ public class RegisterServlet extends HttpServlet {
 
     protected void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        //handnote
+        //request获取多值参数，遍历多值参数
         System.out.println("获取单值参数name:" + request.getParameter("name"));
 
         String[] hobits = request.getParameterValues("hobits");

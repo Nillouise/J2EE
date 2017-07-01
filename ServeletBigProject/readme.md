@@ -1,0 +1,12 @@
+handnote
+经过这个项目总算明白了web整个流程
+
+先说idea相关，facet是配置这个项目的包的，而artifact是配置部署什么包到服务器的，所以单单把包导入到module是不够的，还要设置这个包要不要部署到服务器。
+
+单纯的web项目只要一个web.xml配置文件就可以了，就可以使用Annotation路由的功能了（也就是说不需要添加spring就可以使用servlet，filter，listener，路由Annotation等功能）。
+
+maven只需要用Add framework 添加这个插件进去，在pom.xml里就可以添加包了，也要在idea的setting里设置好maven的仓库成阿里云，这样下载速度才够快。
+
+接下来说servlet，servlet要继承HttpServlet，servlet两个重要的对象request和response 可以用setContent来设置中文问题，request和response包含了所有重要的信息，包括url申请等。
+重写doGet和doPost，或service来接受响应，设置上service是doGet和doPost的上级。
+servlet的生命周期是整个服务器生命中都用的同一个实例（默认情况下）。

@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-
+    <!-- handnote -->
     <!--下面是配置url路由 -->
     <!--<servlet>-->
         <!--<servlet-name>HelloServlet</servlet-name>-->

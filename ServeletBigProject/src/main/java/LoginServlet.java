@@ -15,7 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name="LoginServlet",urlPatterns="/login")
 public class LoginServlet extends HttpServlet
 {
-
+    //handnote
+    //使用logger进行日志记录，好像比spring的aop要来得差。
     static Logger logger = Logger.getLogger(LoginServlet.class.toString());
     public LoginServlet()
     {
@@ -37,7 +38,7 @@ public class LoginServlet extends HttpServlet
             throws ServletException, IOException {
 
         //handnote
-        //设置中文UTF-8 在request里
+        //设置中文编码UTF-8 在request里
         request.setCharacterEncoding("UTF-8");
         String name = request.getParameter("name");
         String password = request.getParameter("password");
