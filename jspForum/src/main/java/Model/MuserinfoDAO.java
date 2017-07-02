@@ -1,10 +1,7 @@
 package Model;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.List;
+import java.sql.*;
+import java.util.*;
 
 /**
  * Created by win7x64 on 2017/7/2.
@@ -22,8 +19,8 @@ public class MuserinfoDAO implements DAO<Muserinfo>
         String sql = "insert into userinfo(UserName,UserPassword) values(?,?)";
         try  {
             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setString(1, userinfo.UserName);
-            ps.setString(2, userinfo.Password);
+            ps.setString(1, userinfo.username);
+            ps.setString(2, userinfo.password);
 
             ps.execute();
 
@@ -48,13 +45,37 @@ public class MuserinfoDAO implements DAO<Muserinfo>
     }
 
     public List<Muserinfo> list() {
+        //handnote 单单List好像是不行的，是abstract 的，要用ArrayList才行；
 
-        return null;
+        return list(0,Short.MAX_VALUE);
     }
 
-    public List<Muserinfo> list(int start, int count) {
+    public List<Muserinfo> list(int start, int count)
+    {
+        //handnote 单单List好像是不行的，是abstract 的，要用ArrayList才行；
+        List<Muserinfo> rlist = new ArrayList<>();
 
-        return null;
+        String sql = "select * from userinfo order by id desc limit ?,? ";
+
+        try (PreparedStatement ps = conn.prepareStatement(sql);) {
+            ps.setInt(1, start);
+            ps.setInt(2, count);
+
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                Muserinfo userinfo = new Muserinfo();
+                userinfo.id = rs.getInt("id");
+                userinfo.username = rs.getString("username");
+                userinfo.password = rs.getString("UserPassword");
+                userinfo.createtime = rs.getTime("createtime");
+                rlist.add(userinfo);
+            }
+        } catch (SQLException e) {
+
+            e.printStackTrace();
+        }
+        return rlist;
     }
 
 }
