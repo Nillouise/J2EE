@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="annotation" />
+        <module name="jspForum" />
         <module name="maven" />
         <module name="mybatis2" />
         <module name="ServeletBigProject" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="annotation" target="1.8" />
+      <module name="jspForum" target="1.8" />
       <module name="maven" target="1.8" />
       <module name="mybatis2" target="1.8" />
       <module name="ServeletBigProject" target="1.8" />

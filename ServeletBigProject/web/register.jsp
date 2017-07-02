@@ -11,7 +11,7 @@
     <title>注册页面</title>
 </head>
 <body>
-    <form action="register" method="get">
+    <form action="register" method="post">
         账号 ： <input type="text" name="name"> <br>
         爱好 ： LOL<input type="checkbox" name="hobits" value="lol">
         DOTA<input type="checkbox" name="hobits" value="dota"> <br>
