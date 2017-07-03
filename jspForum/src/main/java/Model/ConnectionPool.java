@@ -5,7 +5,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
+//handnote
+//实现数据库连接池，使用了await等保证线程同步。
 public class ConnectionPool {
 
     List<Connection> cs = new ArrayList<Connection>();

@@ -25,6 +25,9 @@
 
 <%--%>--%>
 
+<%-- handnote 这里用"_"代替"."，是因为"."才符合EL表达式的规范。 --%>
+    总用户数：${muserinfo_getCount} <br/>
+
     <c:forEach items="${userinfolist}" var="userinfo" varStatus="st">
         <tr>
             <td>${userinfo.id}</td>

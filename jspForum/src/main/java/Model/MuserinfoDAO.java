@@ -1,5 +1,7 @@
 package Model;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import java.sql.*;
 import java.util.*;
 
@@ -42,6 +44,46 @@ public class MuserinfoDAO implements DAO<Muserinfo>
     public Muserinfo get(int id) {
 
         return null;
+    }
+
+    public boolean get(String user, String password)
+    {
+        String sql = "select * from userinfo where UserName = ? AND UserPassword = ?";
+
+        try (PreparedStatement ps = conn.prepareStatement(sql);) {
+            ps.setString(1,user);
+            ps.setString(2,password);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next())
+            {
+                return true;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+
+    }
+
+
+    public int getCount()
+    {
+
+        String sql = "select count(*) from userinfo";
+        int r = 0;
+        try (PreparedStatement ps = conn.prepareStatement(sql);) {
+            ResultSet rs = ps.executeQuery();
+            if (rs.next())
+            {
+                r = rs.getInt(1);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return r;
+
     }
 
     public List<Muserinfo> list() {
