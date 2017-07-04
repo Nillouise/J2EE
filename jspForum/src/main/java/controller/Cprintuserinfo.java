@@ -3,6 +3,7 @@ package controller;
 import Model.ConnectionPool;
 import Model.Muserinfo;
 import Model.MuserinfoDAO;
+import javafx.application.Application;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -29,6 +30,7 @@ public class Cprintuserinfo extends HttpServlet {
 
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
+
         MuserinfoDAO muserinfo   =  new MuserinfoDAO(ConnectionPool.getPool().getConnection());
         List<Muserinfo> list  = muserinfo.list();
         request.setAttribute("userinfolist", list);
