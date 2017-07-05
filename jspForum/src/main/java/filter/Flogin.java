@@ -27,10 +27,10 @@ public class Flogin implements Filter {
         }
 
         String userName = (String) request.getSession().getAttribute("username");
-        if (null == userName) {
-            response.sendRedirect("login.jsp");
-            return;
-        }
+//        if (null == userName) {
+//            response.sendRedirect("login.jsp");
+//            return;
+//        }
 
         chain.doFilter(request, response);
     }

@@ -1,8 +1,7 @@
 package controller;
 
-import Model.ConnectionPool;
-import Model.Muserinfo;
-import Model.MuserinfoDAO;
+import Model2.ConnectionPool;
+import Model2.MuserinfoDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

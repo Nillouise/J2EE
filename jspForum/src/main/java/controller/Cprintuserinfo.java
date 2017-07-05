@@ -1,13 +1,10 @@
 package controller;
 
-import Model.ConnectionPool;
-import Model.Muserinfo;
-import Model.MuserinfoDAO;
-import javafx.application.Application;
+import Model2.ConnectionPool;
+import Model2.Muserinfo;
+import Model2.MuserinfoDAO;
 
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

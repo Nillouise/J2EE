@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*" %>
-<%@ page import="Model.Muserinfo" %>
+<%@ page import="Model2.Muserinfo" %>
 <%-- handnote --%>
 <%-- 从jstl包中导入实用的jsp标签,用c命名 --%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
