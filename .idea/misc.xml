@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/chapter2" />
     <file type="web" url="file://$PROJECT_DIR$/maven" />
   </component>
   <component name="MavenProjectsManager">
@@ -10,6 +11,8 @@
         <option value="$PROJECT_DIR$/mybatis2/pom.xml" />
         <option value="$PROJECT_DIR$/ServeletBigProject/pom.xml" />
         <option value="$PROJECT_DIR$/jspForum/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter2/pom.xml" />
+        <option value="$PROJECT_DIR$/jUnit/pom.xml" />
       </list>
     </option>
   </component>

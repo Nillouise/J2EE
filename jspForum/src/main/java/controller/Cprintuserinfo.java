@@ -28,12 +28,19 @@ public class Cprintuserinfo extends HttpServlet {
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
 
-        MuserinfoDAO muserinfo   =  new MuserinfoDAO(ConnectionPool.getPool().getConnection());
+
+        MuserinfoDAO muserinfo = new MuserinfoDAO(ConnectionPool.getPool().getConnection());
         List<Muserinfo> list  = muserinfo.list();
+
         request.setAttribute("userinfolist", list);
-        request.setAttribute("muserinfo_getCount",muserinfo.getCount());
+
+
+        request.setAttribute("muserinfo_getCount", muserinfo.getCount());
+
+
         request.setAttribute("test","testans");
         request.getRequestDispatcher("printuserinfo.jsp").forward(request,response);
+
     }
 
 }

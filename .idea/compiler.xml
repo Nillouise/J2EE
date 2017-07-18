@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="chapter2" />
         <module name="jspForum" />
+        <module name="jUnit" />
         <module name="mybatis2" />
         <module name="ServeletBigProject" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="annotation" target="1.8" />
+      <module name="chapter2" target="1.5" />
       <module name="jspForum" target="1.5" />
-      <module name="maven" target="1.5" />
+      <module name="jUnit" target="1.5" />
       <module name="mybatis2" target="1.5" />
       <module name="ServeletBigProject" target="1.5" />
-      <module name="springmvc" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

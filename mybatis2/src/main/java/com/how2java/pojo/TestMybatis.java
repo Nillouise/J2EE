@@ -17,6 +17,8 @@ public class TestMybatis {
 
     public static void main(String[] args) throws IOException
     {
+        //handnote 这种应该叫做注册事件
+        //mybatis令你不用谢DAO，
         String resource = "mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
