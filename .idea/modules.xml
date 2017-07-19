@@ -5,11 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/J2EE.iml" filepath="$PROJECT_DIR$/J2EE.iml" />
       <module fileurl="file://$PROJECT_DIR$/ServeletBigProject/ServeletBigProject.iml" filepath="$PROJECT_DIR$/ServeletBigProject/ServeletBigProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter2/chapter2.iml" filepath="$PROJECT_DIR$/chapter2/chapter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter3/chapter3.iml" filepath="$PROJECT_DIR$/chapter3/chapter3.iml" />
       <module fileurl="file://$PROJECT_DIR$/how2j/how2j.iml" filepath="$PROJECT_DIR$/how2j/how2j.iml" />
       <module fileurl="file://$PROJECT_DIR$/jUnit/jUnit.iml" filepath="$PROJECT_DIR$/jUnit/jUnit.iml" />
       <module fileurl="file://$PROJECT_DIR$/jspForum/jspForum.iml" filepath="$PROJECT_DIR$/jspForum/jspForum.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis2/mybatis2.iml" filepath="$PROJECT_DIR$/mybatis2/mybatis2.iml" />
       <module fileurl="file://$PROJECT_DIR$/onlyweb3/onlyweb3.iml" filepath="$PROJECT_DIR$/onlyweb3/onlyweb3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-framework/smart-framework.iml" filepath="$PROJECT_DIR$/smart-framework/smart-framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring direct project/spring direct project.iml" filepath="$PROJECT_DIR$/spring direct project/spring direct project.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring2/spring2.iml" filepath="$PROJECT_DIR$/spring2/spring2.iml" />
     </modules>
