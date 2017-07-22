@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/chapter2" />
     <file type="web" url="file://$PROJECT_DIR$/chapter3" />
     <file type="web" url="file://$PROJECT_DIR$/maven" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -16,6 +17,8 @@
         <option value="$PROJECT_DIR$/jUnit/pom.xml" />
         <option value="$PROJECT_DIR$/smart-framework/pom.xml" />
         <option value="$PROJECT_DIR$/chapter3/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/mindanchor/pom.xml" />
       </list>
     </option>
   </component>

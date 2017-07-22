@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 把这个xml文件变成UserInfoMapper的实现类 -->
+<mapper namespace="Nillouise.mapper.UserInfoMapper">
+    <!--<insert id="add" parameterType="UserInfo" >-->
+        <!--insert into userinfo ( username,password ) values (#{username},#{password})-->
+    <!--</insert>-->
+
+    <!--<delete id="delete" parameterType="UserInfo" >-->
+        <!--delete from userinfo where id= #{id}-->
+    <!--</delete>-->
+
+
+    <!--<select id="get" parameterType="_int" resultType="UserInfo">-->
+        <!--select * from userinfo  where id= #{id}-->
+    <!--</select>-->
+
+    <!--<select id="get" parameterType="String" resultType="UserInfo">-->
+        <!--select * from   userinfo  where id= #{id}-->
+    <!--</select>-->
+
+    <!--<update id="update" parameterType="UserInfo" >-->
+        <!--update userinfo set name=#{username} where id=#{id}-->
+    <!--</update>-->
+    <select id="list" resultType="UserInfo">
+        select * from userinfo
+    </select>
+
+
+</mapper>

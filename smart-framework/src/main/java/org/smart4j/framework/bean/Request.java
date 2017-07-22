@@ -21,6 +21,7 @@ public class Request {
      */
     private String requestPath;
 
+    //requestMethod = "get",requestPath = "www.baidu.com/control"这种
     public Request(String requestMethod, String requestPath) {
         this.requestMethod = requestMethod;
         this.requestPath = requestPath;

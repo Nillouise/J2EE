@@ -14,6 +14,7 @@ import org.smart4j.framework.util.StringUtil;
  * @author huangyong
  * @since 1.0.0
  */
+//自定义controller用来接收参数的东西
 public class Param {
     private Map<String,Object> paramMap;
     public Param(Map<String,Object> paramMap)
